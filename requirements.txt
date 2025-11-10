@@ -8,3 +8,4 @@ gpt4all
 chromadb
 requests
 beautifulsoup4
+starlette>=0.40.0 # not directly required, pinned by Snyk to avoid a vulnerability
