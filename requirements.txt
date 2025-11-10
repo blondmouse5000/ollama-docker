@@ -1,11 +1,13 @@
-fastapi
+fastapi>=0.109.1
 uvicorn
 debugpy
 langchain-community
-langchain
+langchain>=0.0.236
 langchainhub
 gpt4all
 chromadb
 requests
 beautifulsoup4
-starlette>=0.40.0 # not directly required, pinned by Snyk to avoid a vulnerability
+starlette>=0.40.0 
+protobuf>=6.31.1
+h11>=0.16.0

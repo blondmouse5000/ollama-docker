@@ -6,6 +6,7 @@ Welcome to the Ollama Docker Compose Setup! This project simplifies the deployme
 ## Getting Started
 
 ### Prerequisites
+
 Make sure you have the following prerequisites installed on your machine:
 
 - Docker (should also be able to run docker compose ...)
@@ -49,11 +50,13 @@ docker run --gpus all nvidia/cuda:11.5.2-base-ubuntu20.04 nvidia-smi
 Start Ollama and its dependencies using Docker Compose:
 
 if gpu is configured
+
 ```bash
 docker compose -f docker-compose-ollama-gpu.yaml up -d
 ```
 
 else
+
 ```bash
 docker compose up -d
 ```
@@ -72,6 +75,7 @@ You can explore Langchain and Ollama within the project. A third container named
 
 The **app** container serves as a devcontainer, allowing you to boot into it for experimentation. Additionally, the run.sh file contains code to set up a virtual environment if you prefer not to use Docker for your development environment.
 if you have vs code and the `Remote Development´ extension simply opening this project from the root will make vscode ask you to reopen in container
+
 ## Stop and Cleanup
 
 To stop the containers and remove the network:
@@ -85,7 +89,6 @@ docker compose down
 We welcome contributions! If you'd like to contribute to the Ollama Docker Compose Setup, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
 ![Alt](https://repobeats.axiom.co/api/embed/d7581a324f7cb8cfcc18a1465b039157e3d1c8dc.svg "Repobeats analytics image")
-
 
 ## License
 
